@@ -137,6 +137,12 @@ public class Datum {
 		this.godina = other.godina;
 	}
 	
+	/**
+	 * Funkcija provjerada da li su datumi jednaki
+	 * @param datum
+	 * @return boolean
+	 */
+	
 	public boolean equals(Datum datum)
 	{
 		if (this.dan == datum.dan && this.mjesec == datum.mjesec && this.godina == datum.godina)
@@ -145,6 +151,12 @@ public class Datum {
 		}
 		return false;
 	}
+	
+	/**
+	 * Funkcija poredi dva datuma
+	 * @param datum
+	 * @return int
+	 */
 	
 	public int compare(Datum datum)
 	{
@@ -184,6 +196,10 @@ public class Datum {
 		}
 	}
 	
+	/**
+	 * Funkcija kreira niz od 50 random datuma i vraća taj niz 
+	 * @return datum
+	 */
 	
 	private static Datum[] izmisliDatume()
 	{
@@ -209,6 +225,12 @@ public class Datum {
 		return datum;
 	}
 	
+	/**
+	 * Funkcija prima niz datuma i sortira datume
+	 * @param nizDatuma
+	 * @return nizDatuma
+	 */
+	
 	private static Datum[] sortirajDatume (Datum[] nizDatuma)
 	{
 		for (int i = 0; i < nizDatuma.length-1; i++) 
@@ -225,6 +247,13 @@ public class Datum {
 		}		
 		return nizDatuma;
 	}
+	
+	/**
+	 * Funkcija prima dva datuma i ispisuje razliku datuma u danima
+	 * @param datum1
+	 * @param datum2
+	 * @return razlikaDana
+	 */
 	
 	private static int razlikaDatuma(Datum datum1, Datum datum2) 
 	{
@@ -250,6 +279,10 @@ public class Datum {
 		}
 		return razlikaDana;
 	}
+	
+	/**
+	 * Funkcija ispisuje niz od 50 sortiranih random datuma
+	 */
 	
 	public static void ispisiDatume() 
 	{
